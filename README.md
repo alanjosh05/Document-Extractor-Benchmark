@@ -4,7 +4,7 @@ A comprehensive benchmarking framework for evaluating and comparing state-of-the
 
 This tool processes a folder of PDFs through multiple OCR and document parsing pipelines, dynamically capturing runtime metrics, and evaluates the outputs against a Ground Truth using both deterministic algorithms and an intelligent LLM-as-a-Judge.
 
-## 🚀 Supported Pipelines
+## Supported Pipelines
 - **MinerU**
 - **Docling**
 - **MinerU + OCRmyPDF**
