@@ -1,79 +1,0 @@
-timestamp,pipeline,pdf,success,markdown_path,time_sec,n_pages,throughput,peak_vram_mb,latency_p95,error
-1780134202.8539882,mineru,49.pdf,True,outputs/mineru/49.md,87.28,1,0.0115,0.0,87.28,
-1780134268.206943,mineru,64.pdf,True,outputs/mineru/64.md,64.0,1,0.0156,0.0,64.0,
-1780134427.560647,mineru,purchase_orders_11053.pdf,True,outputs/mineru/purchase_orders_11053.md,157.98,1,0.0063,0.0,157.98,
-1780134526.156873,mineru,batch1-0273.pdf,True,outputs/mineru/batch1-0273.md,97.1,1,0.0103,0.0,97.1,
-1780134606.6789289,mineru,X51007419197.pdf,True,outputs/mineru/X51007419197.md,78.56,1,0.0127,0.0,78.56,
-1780134691.309775,mineru,11.pdf,True,outputs/mineru/11.md,83.25,1,0.012,0.0,83.25,
-1780134772.554378,mineru,X51007391390.pdf,True,outputs/mineru/X51007391390.md,79.98,1,0.0125,0.0,79.98,
-1780134869.790312,mineru,batch2-0996.pdf,True,outputs/mineru/batch2-0996.md,95.91,1,0.0104,0.0,95.91,
-1780135014.99759,mineru,35.pdf,True,outputs/mineru/35.md,143.88,1,0.007,0.0,143.88,
-1780135080.5806038,mineru,order_11069.pdf,True,outputs/mineru/order_11069.md,64.22,1,0.0156,0.0,64.22,
-1780135178.252129,mineru,25.pdf,True,outputs/mineru/25.md,96.2,1,0.0104,0.0,96.2,
-1780135268.655555,mineru,27.pdf,True,outputs/mineru/27.md,88.78,1,0.0113,0.0,88.78,
-1780135452.486816,mineru,94.pdf,True,outputs/mineru/94.md,182.38,1,0.0055,0.0,182.38,
-1780135677.4956648,mineru,43.pdf,True,outputs/mineru/43.md,223.66,1,0.0045,0.0,223.66,
-1780135819.573327,mineru,81.pdf,True,outputs/mineru/81.md,140.66,1,0.0071,0.0,140.66,
-1780135991.777339,mineru,90.pdf,True,outputs/mineru/90.md,170.75,1,0.0059,0.0,170.75,
-1780136138.0080152,mineru,X51008164997.pdf,True,outputs/mineru/X51008164997.md,144.85,1,0.0069,0.0,144.85,
-1780136269.089244,mineru,79.pdf,True,outputs/mineru/79.md,129.8,1,0.0077,0.0,129.8,
-1780136561.4772701,mineru_ocrmypdf,49.pdf,True,outputs/mineru_ocrmypdf/49.md,288.73,1,0.0035,0.0,288.73,
-1780136809.824053,mineru_ocrmypdf,64.pdf,True,outputs/mineru_ocrmypdf/64.md,246.23,1,0.0041,0.0,246.23,
-1780137002.819426,mineru_ocrmypdf,purchase_orders_11053.pdf,True,outputs/mineru_ocrmypdf/purchase_orders_11053.md,191.41,1,0.0052,0.0,191.41,
-1780137212.771613,mineru_ocrmypdf,batch1-0273.pdf,False,,,1,0.0,0.0,0.0,"Command '['mineru', '-p', '/var/folders/3k/901bfsfd2fg9y6ndr696dxnw0000gn/T/tmp3y5ojewf.pdf', '-o', 'temp/mineru_ocrmypdf']' returned non-zero exit status 1.
-Stdout: Start MinerU FastAPI Service: http://127.0.0.1:50115
-API documentation: http://127.0.0.1:50115/docs
-
-Stderr: 2026-05-30 16:00:09.038 | INFO     | mineru.cli.client:run_orchestrated_cli:877 - Started local mineru-api at http://127.0.0.1:50115
-2026-05-30 16:00:11.363 | INFO     | __main__:create_app:233 - Request concurrency limited to 1
-INFO:     Started server process [10916]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://127.0.0.1:50115 (Press CTRL+C to quit)
-2026-05-30 16:00:12.067 | INFO     | mineru.cli.client:run_planned_task:773 - Submitting batch 1/1 | 1 document, 1 page in this batch | 1 page total | task#1 [tmp3y5ojewf]
-Skipping data after last boundary
-2026-05-30 16:00:17.387 | INFO     | mineru.utils.engine_utils:get_vlm_engine:34 - Using mlx-engine as the inference engine for VLM.
-Fetching 13 files:   0%|                                                                                                                | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 29018.60it/s]
-The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
-2026-05-30 16:00:22.459 | INFO     | mineru.backend.vlm.vlm_analyze:get_model:251 - get mlx-engine predictor cost: 4.39s
-2026-05-30 16:00:22.537 | INFO     | mineru.backend.hybrid.hybrid_analyze:aio_doc_analyze:886 - Hybrid processing-window run. page_count=1, window_size=64, total_windows=1
-2026-05-30 16:00:26.008 | INFO     | mineru.backend.hybrid.hybrid_analyze:aio_doc_analyze:907 - Hybrid processing window 1/1: pages 1-1/1 (1 pages)
-Layout Preparation:   0%|                                                                                                                | 0/1 [00:00<?, ?it/s]Layout Preparation: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  9.83it/s]Layout Preparation: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  9.82it/s]
-Predict:   0%|                                                                                                                           | 0/1 [00:00<?, ?it/s]Predict: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [01:10<00:00, 70.13s/it]Predict: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [01:10<00:00, 70.14s/it]
-Layout Output Parsing:   0%|                                                                                                             | 0/1 [00:00<?, ?it/s]Layout Output Parsing: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 30.25it/s]
-Extract Preparation:   0%|                                                                                                               | 0/1 [00:00<?, ?it/s]Extract Preparation: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 19.42it/s]
-Predict:   0%|                                                                                                                          | 0/18 [00:00<?, ?it/s]Predict:   6%|██████▎                                                                                                           | 1/18 [00:05<01:32,  5.42s/it]Predict:  11%|████████████▋                                                                                                     | 2/18 [00:08<01:01,  3.84s/it]Predict:  17%|███████████████████                                                                                               | 3/18 [00:10<00:48,  3.23s/it]Predict:  22%|█████████████████████████▎                                                                                        | 4/18 [00:13<00:40,  2.93s/it]Predict:  28%|███████████████████████████████▋                                                                                  | 5/18 [00:15<00:37,  2.89s/it]Predict:  33%|██████████████████████████████████████                                                                            | 6/18 [00:18<00:32,  2.67s/it]Predict:  39%|████████████████████████████████████████████▎                                                                     | 7/18 [00:20<00:27,  2.53s/it]Predict:  44%|██████████████████████████████████████████████████▋                                                               | 8/18 [00:23<00:25,  2.59s/it]Predict:  50%|█████████████████████████████████████████████████████████                                                         | 9/18 [00:27<00:28,  3.15s/it]Predict:  56%|██████████████████████████████████████████████████████████████▊                                                  | 10/18 [00:29<00:22,  2.79s/it]Predict:  61%|█████████████████████████████████████████████████████████████████████                                            | 11/18 [00:31<00:18,  2.59s/it]Predict:  67%|███████████████████████████████████████████████████████████████████████████▎                                     | 12/18 [00:34<00:15,  2.59s/it]Predict:  72%|█████████████████████████████████████████████████████████████████████████████████▌                               | 13/18 [00:37<00:13,  2.72s/it]Predict:  78%|███████████████████████████████████████████████████████████████████████████████████████▉                         | 14/18 [00:39<00:10,  2.57s/it]Predict:  83%|██████████████████████████████████████████████████████████████████████████████████████████████▏                  | 15/18 [00:41<00:07,  2.37s/it]libc++abi: terminating due to uncaught exception of type std::runtime_error: [METAL] Command buffer execution failed: Caused GPU Timeout Error (00000002:kIOGPUCommandBufferCallbackErrorTimeout)
-/opt/anaconda3/envs/deeplearning/lib/python3.13/multiprocessing/resource_tracker.py:301: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown: {'/loky-10916-0brkeily', '/loky-10916-gbfycydf', '/loky-10916-z6s11c_9', '/loky-10916-_v3knb9u', '/loky-10916-rele_565', '/loky-10916-aritzsxu'}
-  warnings.warn(
-Error: 1 task(s) failed while processing documents:
-- task#1 (tmp3y5ojewf): 
-"
-1780137431.3504262,mineru_ocrmypdf,X51007419197.pdf,False,,,1,0.0,0.0,0.0,"Command '['mineru', '-p', '/var/folders/3k/901bfsfd2fg9y6ndr696dxnw0000gn/T/tmpoucmprx0.pdf', '-o', 'temp/mineru_ocrmypdf']' returned non-zero exit status 1.
-Stdout: Start MinerU FastAPI Service: http://127.0.0.1:50145
-API documentation: http://127.0.0.1:50145/docs
-
-Stderr: 2026-05-30 16:03:39.168 | INFO     | mineru.cli.client:run_orchestrated_cli:877 - Started local mineru-api at http://127.0.0.1:50145
-2026-05-30 16:03:43.216 | INFO     | __main__:create_app:233 - Request concurrency limited to 1
-INFO:     Started server process [14800]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://127.0.0.1:50145 (Press CTRL+C to quit)
-2026-05-30 16:03:44.209 | INFO     | mineru.cli.client:run_planned_task:773 - Submitting batch 1/1 | 1 document, 1 page in this batch | 1 page total | task#1 [tmpoucmprx0]
-Skipping data after last boundary
-2026-05-30 16:03:50.708 | INFO     | mineru.utils.engine_utils:get_vlm_engine:34 - Using mlx-engine as the inference engine for VLM.
-Fetching 13 files:   0%|                                                                                                                | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 31390.88it/s]
-The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
-2026-05-30 16:03:56.827 | INFO     | mineru.backend.vlm.vlm_analyze:get_model:251 - get mlx-engine predictor cost: 5.27s
-2026-05-30 16:03:56.916 | INFO     | mineru.backend.hybrid.hybrid_analyze:aio_doc_analyze:886 - Hybrid processing-window run. page_count=1, window_size=64, total_windows=1
-2026-05-30 16:04:00.299 | INFO     | mineru.backend.hybrid.hybrid_analyze:aio_doc_analyze:907 - Hybrid processing window 1/1: pages 1-1/1 (1 pages)
-Layout Preparation:   0%|                                                                                                                | 0/1 [00:00<?, ?it/s]Layout Preparation: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 13.93it/s]
-Predict:   0%|                                                                                                                           | 0/1 [00:00<?, ?it/s]Predict: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [01:05<00:00, 65.26s/it]Predict: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [01:05<00:00, 65.30s/it]
-Layout Output Parsing:   0%|                                                                                                             | 0/1 [00:00<?, ?it/s]Layout Output Parsing: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 38.79it/s]
-Extract Preparation:   0%|                                                                                                               | 0/1 [00:00<?, ?it/s]Extract Preparation: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 16.35it/s]
-Predict:   0%|                                                                                                                          | 0/13 [00:00<?, ?it/s]Predict:   8%|████████▊                                                                                                         | 1/13 [00:01<00:23,  1.95s/it]Predict:  15%|█████████████████▌                                                                                                | 2/13 [00:06<00:40,  3.68s/it]Predict:  23%|██████████████████████████▎                                                                                       | 3/13 [00:21<01:26,  8.69s/it]Predict:  31%|███████████████████████████████████                                                                               | 4/13 [00:31<01:24,  9.35s/it]Predict:  38%|███████████████████████████████████████████▊                                                                      | 5/13 [00:36<01:02,  7.83s/it]Predict:  46%|████████████████████████████████████████████████████▌                                                             | 6/13 [00:41<00:46,  6.70s/it]Predict:  54%|█████████████████████████████████████████████████████████████▍                                                    | 7/13 [00:46<00:36,  6.07s/it]Predict:  62%|██████████████████████████████████████████████████████████████████████▏                                           | 8/13 [00:50<00:27,  5.51s/it]libc++abi: terminating due to uncaught exception of type std::runtime_error: [METAL] Command buffer execution failed: Caused GPU Timeout Error (00000002:kIOGPUCommandBufferCallbackErrorTimeout)
-/opt/anaconda3/envs/deeplearning/lib/python3.13/multiprocessing/resource_tracker.py:301: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown: {'/loky-14800-h0aaidm9', '/loky-14800-gr6k8o9u', '/loky-14800-x4zu_2te', '/loky-14800-urt4karm', '/loky-14800-v8xpj504', '/loky-14800-6trwylnc'}
-  warnings.warn(
-Error: 1 task(s) failed while processing documents:
-- task#1 (tmpoucmprx0): All connection attempts failed
-"
-1780137623.4001322,mineru_ocrmypdf,11.pdf,True,outputs/mineru_ocrmypdf/11.md,190.22,1,0.0053,0.0,190.22,

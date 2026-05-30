@@ -18,7 +18,7 @@ from pipelines.miner import MinerUPipeline
 from pipelines.miner_omp import MinerUOCRmyPDFPipeline
 from pipelines.docling_rapid import RapidOCRDoclingPipeline
 from pipelines.glm import GlmOCRPipeline
-# from pipelines.lighton import LightOnOCRPipeline
+from pipelines.lighton import LightOnOCRPipeline
 
 # Mapping of pipeline name to class for easy iteration
 PIPELINES = [
@@ -28,7 +28,7 @@ PIPELINES = [
     MinerUOCRmyPDFPipeline(),
     #RapidOCRDoclingPipeline(),
     #GlmOCRPipeline(),
-    # LightOnOCRPipeline(),
+    LightOnOCRPipeline(),
 ]
 
 
@@ -148,7 +148,7 @@ def main() -> None:
         MinerUOCRmyPDFPipeline,
         #RapidOCRDoclingPipeline,
         #GlmOCRPipeline,
-        # LightOnOCRPipeline,
+        LightOnOCRPipeline,
     ]
 
     all_results: List[Dict] = []
